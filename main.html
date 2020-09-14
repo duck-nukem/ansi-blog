@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>irq</title>
+    <script src="assets/ansi_up.js"></script>
+    <script>
+        async function loadContent(filename) {
+            const file = await fetch(filename);
+
+            if (file.statusText !== 'OK') {
+                return await loadContent('notfound');
+            }
+
+            const content = document.getElementById('content');
+            const fileContents = await file.text();
+            content.innerHTML = formatContent(fileContents);
+            window.location.hash = filename;
+        }
+
+        function formatContent(content) {
+            const nothing = '';
+
+            // clean website specific stuff
+            content = content.replace(/<script>.*<\/script>/ig, nothing);
+            content = content.replace(/<!--.*-->/ig, nothing);
+
+            // render that sweet ANSI baby
+            content = new AnsiUp().ansi_to_html(content);
+            content = content.replace(/http(s?):\/\/([^\s]+)/ig, hyperlink);
+            content = content.replace(/\n/g, '<br>');
+
+            return content;
+        }
+
+        function makeExternalLink(match) {
+            return `<a href="${match}" rel="noopener noreferrer" target="_blank">${match}</a>`
+        }
+
+        function makeInternalLink(match, currentDomain) {
+            const localPath = match.split(currentDomain)[1].substr(1);
+            return `<a onclick="loadContent('${localPath}')">${localPath}</a>`
+        }
+
+        function startsWith(value, start) {
+            return value.substring(0, start.length) === start;
+        }
+
+        function hyperlink(rawLink) {
+            const domain = window.location.origin;
+
+            return startsWith(rawLink, domain) ?
+                makeInternalLink(rawLink, domain) :
+                makeExternalLink(rawLink);
+        }
+
+        function extractHashFromUrl(url) {
+            return url.split('#')[1];
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const destination = extractHashFromUrl(window.location.hash) || 'index.html';
+            return loadContent(destination);
+        });
+
+        window.addEventListener('hashchange', ({newURL}) => {
+            loadContent(extractHashFromUrl(newURL));
+        });
+    </script>
+    <style>
+        @font-face {
+            font-family: dos;
+            src: url('assets/BlockZone.ttf');
+        }
+
+        a:link, a:hover, a:visited, a {
+            color: inherit;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        body {
+            background-color: #150811;
+            color: #F1F5F2;
+        }
+
+        pre {
+            font-family: dos;
+            word-wrap: break-word;
+            line-height: 1;
+            margin: 0 auto;
+            width: 96ch;
+        }
+    </style>
+</head>
+<body>
+<div id="header" class="center"></div>
+<pre id="content"></pre>
+</body>
+</html>
