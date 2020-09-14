@@ -8,7 +8,7 @@
         async function loadContent(filename) {
             const file = await fetch(filename);
 
-            if (file.statusText !== 'OK') {
+            if (file.status !== 200) {
                 return await loadContent('notfound');
             }
 
