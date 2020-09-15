@@ -40,7 +40,7 @@
 
         function makeInternalLink(match, currentDomain) {
             const localPath = match.split(currentDomain)[1].substr(1);
-            return `<a onclick="loadContent('${localPath}')">${localPath}</a>`
+            return `<a href="${currentDomain}/main.html#${localPath}">${localPath}</a>`
         }
 
         function startsWith(value, start) {
