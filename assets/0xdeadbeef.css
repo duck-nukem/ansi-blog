@@ -1,0 +1,36 @@
+@font-face {
+    font-family: dos;
+    src: url('assets/fonts/BlockZone.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:link, a:hover, a:visited, a {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    background-color: #150811;
+    color: #F1F5F2;
+    -webkit-font-smoothing: antialiased;
+}
+
+pre {
+    display: inline-block;
+    font-family: dos;
+    word-wrap: break-word;
+    line-height: 1;
+    min-height: 95vh;
+    text-align: left;
+    font-weight: 400;
+    font-size: 1em;
+    -webkit-text-stroke: thistle;
+    text-transform: full-width;
+    text-rendering: optimizeLegibility;
+}
