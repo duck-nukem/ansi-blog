@@ -1,0 +1,294 @@
+[0m
+   ░  █████████████████████████████████████████████████████████████░░█
+   ░██░░░█░░░░░░░░░░░░░░░░░░░████████████████████████████████░░░█░░███
+   ░░░█░░░░░░░░░░░░░░███░░   [33m..................[0m  ░███░█░░░██████░░░░░█
+   ░░░░░░░░░░░░░███░.  [33m.............................[0m ░█████░░███░░░░░█
+   █░░░░░░░░░███. [33m......................................[0m ██████░░█░░░█
+   █░░░░░░░███ [33m............................................[0m █░░░█░░░░█
+   ░░░░░░░█.[33m.................................................[0m ░██░░░░█
+   ░░░░░█/[33m.....................................................[0m ██░░░█
+   █░░░█ [33m........................................................[0m██░░█
+   █░░█ [33m........................[0m */.  (/ .[33m......................[0m  █░░█
+   █░█ [33m......................[0m*/ ../,#.,.. */.[33m..................... [0m███
+   █░█ [33m..................[0m.,./..//**.  **/ %.,,.[33m....................[0m,██
+   █░. [33m....................[0m* (.**  ,,,  ,*..**.,[33m................... [0m██
+   ██ [33m....................[0m,,*..*/#     #/&*#...,[33m...................[0m ██
+   █░,[33m................... [0m#.,.%./((* ,/(.*....( [33m....................[0m██
+   █░█ [33m................... [0m/@.,.,, *#.**,,,.,#[33m ...................[0m ░░█
+   █░░.[33m.....................[0m *&(  ...... (%( [33m.....................[0m ░░█
+   █░░█ [33m........................  [0m*/,*/  [33m........[30m█[0m [30m░[33m............[0m  █░░█
+   █░█░█.[33m.....................................[30m░░░░░[33m..............[0m░░█.█
+   ███░░██[33m ................................ [30m█░░░░[33m............[0m. ░░░░░░█.
+   █░░██░░░( [33m............................[0m,,[30m█[0m [30m██[0m [33m............[0m (░█░██░░░.
+   ░██████░░░█[33m ......................  [30m█[0m [30m░[0m [30m█░[0m [33m............[0m (█░█░░░░░█░.
+   ░█████████░██░[33m  ................[0m   [30m░░░[0m [30m░[0m [33m...........[0m ░███░░░░░#░#█░,
+  ░░█[33m.,,.,.,.[37m(██████(  [33m.........[0m         ..[33m..[0m..[33m...[0m  (███░░░░█░░░░░░░█░,
+  ░░█ ./ [33m,,,.,[37m /██████████*  ░    [30m░[0m    [30m░░[0m [30m░[0m   ███░███░░░░░░░░█░██░███░█
+  ░░█(██[33m.,.,...,.,.. [37m%████░░░░░░     [30m░[0m ███████████░█░░░░░░░░░░██░░░░█░█
+  ░░██%[33m., ,,..,.,,,,,[37m(   ./.█░░░(░█░███░░█░░░░░░██░█░░░░░░░░░░░░░░░░█░░
+  ░░███████.[33m.......,,*[37m, . **& ░█, ░░█████████░█░░█░██░░░░░░░░░░░░░░░█░░
+  █░█░░████[33m........,..[37m((█/     ,█/█░░██░░░░░░░█░░░█░░░░░░░░░░░░░░░░░█░░
+  █░█░░░█ ░█[33m.,.,.,,,,,,[37m %((█.   █..(█░█░░░░░█░░░░░█░█████░███░███░░░█░█
+  █░█░░░██ ░░ [33m,.,,,..,,.,......,[37m ███(██░░░░░█░░███████████████████░░█░░
+  █░█░░░█░░░█░█ [33m,..,,.......,,.[37m(#[33m.,,,[37m.░█░█░░██   █░██░░░█░░░░██(  ███░█
+  █░░░░░░░░░░██░█░/[33m..,......,,,...[37m(*,.░█░█░░█░█.██░░░░░░░░░░░░░██░███░█
+  █░░░░░░░░░░████/(██. ██.[33m,.,.,,...,.[37m.░█░█░░█░█░ ██░░░░░░░░░░░█ ,██░░░█
+  █░░░░░░░░░░░░░░░░████░░███████████████░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+  █░░░░░█░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░███░░█
+  █░░░██░░█░░░░░░░░░░░░░░░░░░░░░░█     █░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█
+  (█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░█░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██
+   [30m█░░███[0m                            [30m░░░░░░░░░█░█░█░██[0m
+
+Someone asked me to help them get rid of an old dell e6400.
+I upgraded that machine with a new 8800mAh battery, a 240G SSD
+and 4GB of DDR2 RAM. It's actually pretty good, and it lasts 8+ hours
+with a light linux installation. I'm quite pleased with it.
+
+For the HDD I planned to do a secure wipe and to destroy it.
+Before that... let's see what I could do with it.
+
+I connected it to my desktop PC. I figured as it was running Windows
+the drive must be an NTFS one, as it's been the standard file system
+since Windows XP.
+
+I installed ntfs-3g, then ran fdisk
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ sudo apt install -y ntfs-3g && sudo fdisk -l
+
+Disk /dev/sdc: 149,5 GiB, 160041885696 bytes, 312581808 sectors
+Disk model: WDC WD1600BJKT-7
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: dos
+Disk identifier: 0x00068e07
+
+Device     Boot     Start       End   Sectors   Size Id Type
+/dev/sdc1  *         2048    206847    204800   100M  7 HPFS/NTFS/exFAT
+/dev/sdc2          206848 311654399 311447552 148,5G  7 HPFS/NTFS/exFAT
+/dev/sdc3       311654400 312575999    921600   450M 27 Hidden NTFS WinRE
+
+Now I know at least what partition to mount. /dev/sdc1 has the boot flag,
+and it's only 100M. /dev/sdc3 is a hidden 450M partition, which serves
+as the recovery partition in more recent Windows versions.
+
+The only sensible one left is /dev/sdc2 which is also the largest.
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ sudo mkdir -p /mnt/rescued_hdd && sudo mount /dev/sdc2 /mnt/rescued_hdd
+Windows is hibernated, refused to mount.
+The disk contains an unclean file system (0, 0).
+Metadata kept in Windows cache, refused to mount.
+Falling back to read-only mount because the NTFS partition is in an
+unsafe state. Please resume and shutdown Windows fully (no hibernation
+or fast restarting.)
+Could not mount read-write, trying read-only
+
+Oh yeah, it probably complains because the drive has a hyberfile.sys.
+It does that when it wasn't turned off properly. Knowing the owners
+of this machine, it hybernated and then the battery died most likely.
+
+But read-only mount works, cool.
+
+First stop was dumpster diving in `$Recycle.Bin` - nothing was there
+Next stop was in Users/dell/Downloads (dell is the username), where
+I got an ovpn file to connect to the work network.
+
+I'm not trying to fuck with anyone's livelihood, so I'll ignore that.
+
+I went to Application Data, couple of log files, but I really wanted
+to go to AppData instead, just mixed up the names ¯\_(ツ)_/¯
+
+So in AppData, I've found "Google" under Local which suggests that
+Chrome was the main browser.
+
+I browsed into "Google/Chrome/User Data/Default/Cache" and found a
+bunch of files here, but they aren't plain text.
+At this point I'm making a mental note that this could potentially
+be useful, but move on to see if there are lower hanging fruits.
+
+I make a similar mental not for "Login Data" which is an sqlite
+database with credentials saved in the browser. The sensitive values
+(passwords) are encrypted with the user's credentials. Once I have
+them, I should be able to retrieve them...
+
+Let's go to /mnt/rescued_hdd/Windows/System32/config.
+There's a SAM file here, let's see if I can get some
+passwords out of it. I copy SAM and SYSTEM to my linux home folder
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~/hax[38;5;141m][0m
+$ ls -la
+total 14728
+drwxrwxr-x  2 device device     4096 szept 18 15:29 .
+drwxr-xr-x 30 device device     4096 szept 18 15:29 ..
+-rwxrwxr-x  1 device device   131072 szept 18 15:29 SAM
+-rwxrwxr-x  1 device device 14942208 szept 18 15:29 SYSTEM
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~/hax[38;5;141m][0m
+$ samdump2 SYSTEM SAM
+*disabled* Administrator:500::31d6cfe0d16ae931b73c59d7e0c089c0:::
+*disabled* Guest:501::31d6cfe0d16ae931b73c59d7e0c089c0:::
+*disabled* :503::31d6cfe0d16ae931b73c59d7e0c089c0:::
+*disabled* :504::31d6cfe0d16ae931b73c59d7e0c089c0:::
+dell:1001::31d6cfe0d16ae931b73c59d7e0c089c0:::
+HomeGroupUser$:1002::9ced556ce8ee0e7fa31ddff8c4bd68ee:::
+
+(I omitted the LM hashes, they're irrelevant now)
+
+The last hash seems different, I'll give it a go with hashcat.
+Since I hate myself, I spend 40 minutes installing and uninstalling
+various GPU drivers.
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~/hax[38;5;141m][0m
+echo "9ced556ce8ee0e7fa31ddff8c4bd68ee" > hash2crack
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~/hax[38;5;141m][0m
+$ hashcat \
+    -m 1000 \
+    -a 3 ./hash2crack \
+    ?a?a?a?a?a?a?a?a?a \
+    -w 3 \
+    --increment \
+    --increment-max 7
+
+To break it down a little:
+-m 1000 -> We're cracking NTLM
+-a 3 -> brute-force attack mode
+-w 3 -> High workload profile
+?a?a?a?a?a -> full 7-bit ascii charset mask (repeated)
+--increment -> if no match found, repeat the mask for another char
+--increment-max -> stop at this length
+
+After exhausting all combinations from 1-7 length, I stop hashcat,
+as it reports 4d to go through 8 long strings. The electricity bill
+wouldn't be worth it, I'm doing this for fun.
+
+I'll use https://github.com/khast3x/h8mail with the e-mail address
+I've found in Chrome's Login Data file, to see if they have any
+compromised passwords.
+
+[37m 		  Official h8mail posts:
+		  https://khast3x.club/tags/h8mail/
+
+ [0m
+	 [95m Version 2.5.4 - "ROCKSMASSON.4"  [0m
+[01m[38;5;33m [0m
+[01m[38;5;69m 	._____. ._____.     ;____________;[0m
+[01m[38;5;69m 	| ._. | | ._. |     ;   h8mail   ;[0m
+[01m[38;5;105m 	| !_| |_|_|_! |     ;------------;[0m
+[01m[38;5;105m 	!___| |_______!  Heartfelt Email OSINT[0m
+[01m[38;5;141m 	.___|_|_| |___.    Use responsibly[0m
+[01m[38;5;141m 	| ._____| |_. | ;____________________;[0m
+[01m[38;5;177m 	| !_! | | !_! | ; github.com/khast3x ;[0m
+[01m[38;5;177m 	!_____! !_____! ;--------------------;[0m
+[01m[38;5;213m 	[0m
+[01m[32m[>] [0mh8mail is up to date
+[01m[94m[~] [0m[37mRemoving duplicates[0m
+[01m[32m[>] [0mTargets:
+[01m[32m[>] [0m███████████
+[01m[32m[>] [0mscylla.sh is up
+[01m[94m[~] [0m[37mTarget factory started for ███████████[0m
+[01m[94m[~] [0m[37m[███████████]>[hunter.io public][0m
+[01m[32m[>] [0mFound 0 entries for ███████████ using hunter.io
+[01m[94m[~] [0m[37m[███████████]>[scylla.sh][0m
+[01m[32m[>] [0mFound 0 entries for ███████████ using scylla.sh
+
+[01m______________________________________________________________
+ [0m
+[01m[32m[>] [0mShowing results for ███████████[0m
+
+[01m[94m[~] [0m[37mNo results founds[0m
+_____________________________________________________________________
+
+
+
+[01m [04m Session Recap: [0m
+
+
+        Target                 |                   Status[0m
+_____________________________________________________________________
+
+        ███████████            |  [37m             Not Compromised[0m
+_____________________________________________________________________
+
+Execution time (seconds):  [96m 1.754192590713501 [0m
+
+
+(Un)fortunately not. I also spent $5 on dehashed to see if their pass
+can be found in the relatively recent MyFitnessPal leak (which there
+is an entry in Login Data), but I can't get anything there either.
+
+I spend a good chunk of my time learning about how Chrome's encrypting
+these files, and how can they be exposed by running a script as a user.
+
+I also come to realise, that even though there was an NTLM hash different
+from the rest, the rest are all 31d6cfe0d16ae931b73c59d7e0c089c0 which
+is the empty password.
+
+At least it's used to be, until Windows Anniversary update. At this point
+the only stuff I'm finding are highly personal stuff, which isn't
+what I'm after.
+
+I'm debating myself whether to construct a dictionary (and a script) that
+combines:
+
+* Family members' names
+* Employer names
+* All years from 1980 until today
+
+Since I know the person I also know the answers to the above, but I
+decided to park this thought, and if I build the dictionary, I'll only
+use the information that's available from social media and the likes.
+Again, I can get a good sense of her profiles by the "Login Data"
+file, that contains the URLs of these social media sites and the username
+is in plain text.
+
+I decide to boot from the hard drive, and if the password isn't blank,
+I'll use the sticky keys trick to reset the PW and see if I can get
+the chrome passwords.
+
+I need RW access to the Windows folder, so I remount it
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ sudo mount -t ntfs-3g -o remove_hiberfile /dev/sdc2 /mnt/rescued_hdd/
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ cd /mnt/rescued_hdd/Windows/System32
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m/mnt/rescued_hdd/Windows/System32[38;5;141m][0m
+$ mv osk.exe osk.exe.bak && cp cmd.exe osk.exe
+
+Let's reboot.... and I can confirm, there really is no password for dell
+
+I'm installing Python, pypiwin32 and pycryptodomex, then run a
+script I find online at https://stackoverflow.com/a/61333362 to
+use win32crypt.CryptUnprotectData on Chrome's files. I did skip
+the part where I run the system from this old hard drive and
+try to gain a foothold, because:
+
+1. This isn't a CTF, I already have access lul
+2. Ain't nobody got time fo' dat
+
+I was able to recover three passwords out of ~30, which isn't bad
+considering the passwords were like
+
+<child1_name><birth_year>
+<child2_name><birth_year>
+<ex_husband_name><ex_husband_birth_year>
+
+I'm quite pleased as my idea of constructing a dictionary would
+have yielded good results.
+
+After I'm done playing, I'm wiping the drive, overwriting each byte
+with a random first, then 0 using the command
+
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+sudo shred -v -n1 -z /dev/sdc
+
+-v -> verbose for showing progress
+-n1 -> one round of random
+-z -> all bits to 0 after all iteration
+
+Once this completes, I drill a couple of holes in the disks,
+give them a good smash with a large hammer and then toss it in the bin.
