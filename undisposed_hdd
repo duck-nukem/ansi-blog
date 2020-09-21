@@ -221,6 +221,7 @@ is an entry in Login Data), but I can't get anything there either.
 
 I spend a good chunk of my time learning about how Chrome's encrypting
 these files, and how can they be exposed by running a script as a user.
+Read more at https://twitter.com/0xABADDEED/status/1307625076741869568
 
 I also come to realise, that even though there was an NTLM hash different
 from the rest, the rest are all 31d6cfe0d16ae931b73c59d7e0c089c0 which
