@@ -34,3 +34,8 @@ pre {
     text-transform: full-width;
     text-rendering: optimizeLegibility;
 }
+
+span {
+    /* to prevent rendering issues in safari */
+    font-weight: normal !important;
+}
