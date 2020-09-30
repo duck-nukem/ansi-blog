@@ -26,6 +26,7 @@
 
             // clean website specific stuff
             content = content.replace(/<script>.*<\/script>/ig, nothing);
+            content = content.replace(/<style>.*<\/style>/ig, nothing);
             content = content.replace(/<!--.*-->/ig, nothing);
 
             // render that sweet ANSI baby
