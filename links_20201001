@@ -3,41 +3,52 @@
                                         /:/  /        /::\  \        |:|  |
                                        /:/__/        /:/\:\  \       |:|  |
                                       /::\  \ ___   /::\~\:\  \      |:|__|__
-                                     /:/\:\  /\__\ /:/\:\ \:\__\ ____/::::\__\
-                                     \/__\:\/:/  / \/__\:\/:/  / \::::/~~/~
-                                          \::/  /       \::/  /   ~~|:|~~|
-                                          /:/  /        /:/  /      |:|  |
-                                         /:/  /        /:/  /       |:|  |
-                                         \/__/         \/__/         \|__|
+                                     /:/\:\  /\__\ /:/\:\ \:\__\ ____/::::\__\[0m
+[1m                                     [35m\/__\:\/:/  / \/__\:\/:/  / \::::/~~/~
+[37m                                          [35m\::/  /       \::/  /   ~~|:|~~|
+[37m                                          [35m/:/  /        /:/  /      |:|  |
+[37m                                         [35m/:/  /        /:/  /       |:|  |
+[37m                                         [35m\/__/         \/__/         \|__|
+[37m
 
-
-SSH Tarpit
-https://github.com/skeeto/endlessh
-
-Container escape CVE writeup
-https://sysdig.com/blog/cve-2020-14386-falco/
-
-Hash vs Checksum explained by Cybergibbons
-https://cybergibbons.com/reverse-engineering-2/checksums-hashes-and-security/
-
-Some cool crackme writeups
-https://re.kv.io
-
-      ___           ___           ___
-     /\  \         /\  \         /\__\
-    /::\  \       /::\  \       /:/  /
-   /:/\:\  \     /:/\:\  \     /:/  /
-  /:/  \:\__\   /::\~\:\  \   /:/__/  ___
- /:/__/ \:|__| /:/\:\ \:\__\  |:|  | /\__\
- \:\  \ /:/  / \:\~\:\ \/__/  |:|  |/:/  /
-  \:\  /:/  /   \:\ \:\__\    |:|__/:/  /
+SSH [35mTarpit
+[36mhttps://github.com/skeeto/endlessh
+[37m
+[35mContainer[37m escape [35mCVE[37m writeup
+[36mhttps://sysdig.com/blog/cve-2020-14386-falco/
+[37m
+[35mHash vs Checksum[37m explained by Cybergibbons
+[36mhttps://cybergibbons.com/reverse-engineering-2/checksums-hashes-and-security/
+[37m
+Some cool[35m crackme [37mwriteups
+[36mhttps://re.kv.io
+[37m
+      [33m___           ___           ___
+[37m     [33m/\  \[37m         [33m/\[37m  [33m\         /\__\
+[37m    [33m/::\  \       /::\[37m  [33m\       /:/  /
+[37m   [33m/:/\:\  \     /:/\:\[37m  [33m\[37m     [33m/:/  /
+  /:/  \:\__\   /::\~\:\[37m  [33m\[37m   [33m/:/__/  ___
+ /:/_[37m_[33m/ [37m\:|__|[33m /:/\:\ \:\[37m_[33m_\[37m  [33m|:|  |[37m /\__\
+ \:\  \ /:/  / \:\~[33m\:\ \/__/[37m  [33m|:|  [37m|/:/  /
+  \:\  /:/  /   \:\ \:[33m\__\    |[37m:|__/:/  /
    \:\/:/  /     \:\ \/__/     \::::/__/
     \::/__/       \:\__\        ~~~~
      ~~            \/__/
 
-Pretty handsome CSS framework with dark mode support
-https://www.gethalfmoon.com/
+Pretty handsome[33m CSS framework [37mwith dark mode support
+[36mhttps://www.gethalfmoon.com/[37m
 
-TUI with React
-https://www.twilio.com/blog/building-conference-cli-in-react
+[33mTUI [37mwith [33mReact
+[36mhttps://www.twilio.com/blog/building-conference-cli-in-react
+[37m
+
+[0m
+
+
+
+
+
+
+
+
 
