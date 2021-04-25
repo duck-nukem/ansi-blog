@@ -31,7 +31,6 @@ pre {
     font-weight: 400;
     font-size: 1em;
     -webkit-text-stroke: thistle;
-    text-transform: full-width;
     text-rendering: optimizeLegibility;
 }
 
